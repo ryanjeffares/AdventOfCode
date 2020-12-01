@@ -15,7 +15,7 @@ int main()
     auto size = sizeof(input) / sizeof(int);
     for(int i = 0; i < size; i++)
     {
-        for(int j = i; j < size; j++)
+        for(int j = i + 1; j < size; j++)
         {
             // For part 1...
             //if(input[i] + input[j] == 2020)
@@ -23,7 +23,7 @@ int main()
             //    std::cout << input[i] * input[j] << "\n";
             //}
             // For part 2 keep going...
-            for(int k = j; k < size; k++)
+            for(int k = j + 1; k < size; k++)
             {
                 if(input[i] + input[k] + input[j] == 2020)
                 {
