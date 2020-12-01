@@ -17,6 +17,12 @@ int main()
     {
         for(int j = i; j < size; j++)
         {
+            // For part 1...
+            //if(input[i] + input[j] == 2020)
+            //{
+            //    std::cout << input[i] * input[j] << "\n";
+            //}
+            // For part 2 keep going...
             for(int k = j; k < size; k++)
             {
                 if(input[i] + input[k] + input[j] == 2020)
