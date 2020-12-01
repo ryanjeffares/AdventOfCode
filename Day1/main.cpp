@@ -1,7 +1,9 @@
 #include <iostream>
+#include <chrono>
 
 int main()
 {
+    auto start = std::chrono::high_resolution_clock::now();
     int input[] = {1531,1959,1344,1508,1275,1729,1904,1740,1977,1992,1821,1647,1404,1893,1576,1509,1995,1637,1816,1884,
     1608,1943,1825,1902,1227,1214,1675,1650,1752,1818,862,2006,227,1504,1724,1961,1758,1803,1991,1126,1909,1643,1980,1889,
     811,1699,1654,1734,1770,1754,1828,1811,1997,1767,1854,1653,1800,1762,1962,1797,877,1660,1895,1939,1679,1496,1606,1262,
@@ -21,15 +23,25 @@ int main()
             //if(input[i] + input[j] == 2020)
             //{
             //    std::cout << input[i] * input[j] << "\n";
+            //    break;
             //}
             // For part 2 keep going...
             for(int k = j + 1; k < size; k++)
             {
                 if(input[i] + input[k] + input[j] == 2020)
                 {
-                    std::cout << input[i] * input[k] * input[j] << "\n";
+                    std::cout << "Answer: " << input[i] * input[k] * input[j] << "\n";
+                    break;
                 }
             }
         }
     }
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+    std::cout << "Took " << duration << "ms" << "\n";
 }
+
+/* OUTPUT
+* Answer: 212428694
+* Took 3ms
+*/
