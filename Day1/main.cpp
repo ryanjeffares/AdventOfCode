@@ -37,11 +37,13 @@ int main()
         }
     }
     auto end = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
     std::cout << "Took " << duration << "ms" << "\n";
 }
 
 /* OUTPUT
-* Answer: 212428694
-* Took 3ms
+* Answer 1: 567171
+* Took 0 ms
+* Answer 2: 212428694
+* Took 2 ms
 */
