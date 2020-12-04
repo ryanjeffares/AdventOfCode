@@ -19,11 +19,7 @@ int CheckTrees(int right, int down, std::vector<std::string> lines)
     
     for(int i = 0; i < 322; i += down)
     {
-        position += right;
-        if(position > 30)
-        {
-            position -= 31;
-        }
+        position = position + right <= 30 ? position + right : position + right - 31;
         char target = lines[i + down][position];
         if(target == tree)
         {
