@@ -44,6 +44,12 @@ int main()
     // lines[1] is ......#..#....#....###......#.# 
     // etc..
 
+    //std::cout << CheckTrees(1, 1, lines) << "\n";    
+    //std::cout << CheckTrees(3, 1, lines) << "\n";
+    //std::cout << CheckTrees(5, 1, lines) << "\n";
+    //std::cout << CheckTrees(7, 1, lines) << "\n";
+    //std::cout << CheckTrees(1, 2, lines) << "\n";    
+
     long answer = CheckTrees(1, 1, lines) * CheckTrees(3, 1, lines) * CheckTrees(5, 1, lines) * CheckTrees(7, 1, lines) * CheckTrees(1, 2, lines);
 
     std::cout << answer << "\n"; // this prints a way too small number, why?
