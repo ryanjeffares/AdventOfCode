@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\ryand\Dev\Random\AdventOfCode2020\Day4\main.h(35): warning C4715: 'Solver::GetFieldEnum': not all control paths return a value
+  Day4.vcxproj -> C:\Users\ryand\Dev\Random\AdventOfCode2020\Day4\Debug\Day4.exe

@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\ryand\Dev\Random\AdventOfCode2020\Day5\main.h(98,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ryand\Dev\Random\AdventOfCode2020\Day5\main.h(106): warning C4715: 'Solver::FindMissingSeat': not all control paths return a value
+  Day5.vcxproj -> C:\Users\ryand\Dev\Random\AdventOfCode2020\Day5\Debug\Day5.exe
