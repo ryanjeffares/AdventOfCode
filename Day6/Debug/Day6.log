@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\ryand\Dev\Random\AdventOfCode2020\Day6\main.h(107,23): warning C4018: '<': signed/unsigned mismatch
+  Day6.vcxproj -> C:\Users\ryand\Dev\Random\AdventOfCode2020\Day6\Debug\Day6.exe
