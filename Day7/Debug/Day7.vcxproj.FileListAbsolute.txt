@@ -1,0 +1,2 @@
+C:\Users\ryand\Dev\Random\AdventOfCode2020\Day7\Debug\Day7.exe
+C:\Users\ryand\Dev\Random\AdventOfCode2020\Day7\Debug\Day7.pdb
